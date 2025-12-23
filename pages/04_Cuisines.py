@@ -37,7 +37,7 @@ def main():
 
     countries, top_n, cuisines = make_sidebar(df) #chama a função sidebar para capturar a seleção do usuário
 
-    st.markdown("# :knife_fork_plate: Visão Tipos de Cusinhas") #título principal
+    st.markdown("# :fork_and_knife_with_plate: Visão Tipos de Culinárias") #título principal
 
     df_restaurants = cdt.top_restaurants(countries, cuisines, top_n) #chama função utilitária que retorna um DataFrame com os top restaurantes, filtrando por countries e cuisines, limitado a top_n
 
@@ -63,4 +63,5 @@ def main():
         st.plotly_chart(fig, use_container_width=True)
 
 if __name__ == "__main__":
+
     main()
